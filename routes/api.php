@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,13 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
-Route::get('/predict', function(){
-    // $response = Http::asForm()->get(env('API_URL') );
-    $response = (object) Http::asForm()->get(env('API_URL') )->json();
-    dd($response);
-    return $response;
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
 });

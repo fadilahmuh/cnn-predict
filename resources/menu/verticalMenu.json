@@ -1,0 +1,22 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "name": "Home",
+      "slug": "home"
+    },
+    {
+      "url": "/predict",
+      "icon": "menu-icon tf-icons bx bx-test-tube",
+      "name": "Predict",
+      "slug": "predict"
+    },
+    {
+      "url": "/about",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "name": "About",
+      "slug": "about"
+    }
+  ]
+}
