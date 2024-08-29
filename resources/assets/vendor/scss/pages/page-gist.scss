@@ -1,0 +1,54 @@
+$color_1: #333;
+$color_2: #ffffff;
+$color_3: var(--fgColor-muted, var(--color-fg-muted));
+$font-family_1: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+$background-color_1: var(--bgColor-default, var(--color-canvas-default));
+$background-color_2: #f7f7f7;
+$border-color_1: #555 #555 #444;
+$border-color_2: #555;
+
+.gist {
+	font-size: 16px;
+	color: $color_1;
+	text-align: left;
+	direction: ltr;
+	.gist-file {
+		margin-bottom: 1em;
+		font-family: $font-family_1;
+		border: 1px solid #ddd;
+		border-bottom: 1px solid #ccc;
+		border-radius: 6px;
+	}
+	.gist-data {
+		overflow: auto;
+		word-wrap: normal;
+		background-color: $background-color_1;
+		border-bottom: 1px solid #ddd;
+		border-radius: 6px 6px 0 0;
+	}
+	.gist-meta {
+		padding: 10px;
+		overflow: hidden;
+		font: 12px -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+		color: $color_3;
+		background-color: $background-color_2;
+		border-radius: 0 0 6px 6px;
+	}
+}
+body {
+	.gist {
+		.gist-file {
+			border-color: $border-color_1;
+		}
+		.gist-data {
+			border-color: $border-color_2;
+		}
+		.gist-meta {
+			color: $color_2;
+			background: #373737;
+			a {
+				color: $color_2;
+			}
+		}
+	}
+}

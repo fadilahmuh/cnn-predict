@@ -35,6 +35,7 @@ class CnnController extends Controller
             
             return response()->json($response, 200);
         }else {
+            
             $response = (object) $response->json();
             return response()->json($response, 400);
         }
